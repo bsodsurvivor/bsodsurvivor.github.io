@@ -1,0 +1,10 @@
+markdown:         kramdown
+highlighter:      rouge
+permalink:        pretty
+title:            BSoD Survivor
+url:              http://bsodsurvivor.com
+baseurl:          /
+author:
+  name:           bsodsurvivor
+  url:            http://bsodsurvivor.com
+github: https://github.com/bsodsurvivor/

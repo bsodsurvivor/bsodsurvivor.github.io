@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <header>
+  <h1><a href="http://bitlessthoughts.com">{{ site.title }}</a></h1>
+  <nav>
+    <ul>
+      {% for node in site.pages %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <li><a href="{{ node.url }}">{{ node.title }}</a></li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      <li><a href="{{ base.url }}">Posts</a></li>
+      <li><a href="{{ site.github }}">Github</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <body>
+
+  {{ content }}
+
+  <footer>
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  </footer>
+  </body>
+</html>

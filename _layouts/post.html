@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<article>
+  <section class="title">
+    {% if page.date %}
+    <h6>{{ page.date | date_to_string }}</h6>
+    {% endif %}
+    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+  </section>
+  <p>
+  {{ page.content }}
+  </p>
+</article>
